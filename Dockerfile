@@ -5,7 +5,7 @@ LABEL description="NEST is Docker Container For OSINT. Very basic programs such 
 RUN :> /etc/pacman.d/blackarch-mirrorlist
 RUN echo 'Server = https://download.nus.edu.sg/mirror/blackarch/$repo/os/$arch' >> /etc/pacman.d/blackarch-mirrorlist
 RUN pacman -Syu --noconfirm &&\
-    pacman -S sudo buster cardpwn instagramosint twint phoneinfoga tor proxychains tor-router nipe --noconfirm --overwrite='*'
+    pacman -S sudo buster cardpwn instagramosint osi.ig twint phoneinfoga tor torsocks proxychains tor-router nipe --noconfirm --overwrite='*'
     
 
 ARG USERNAME=nest
