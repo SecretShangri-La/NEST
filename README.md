@@ -8,7 +8,7 @@ fast install
 ```shell
 $ docker run -it --rm ghcr.io/secretshangri-la/nest:1.0
 ```
-
+manually install
 ```shell
 $ cd NEST
 $ docker build -t nest:latest .
