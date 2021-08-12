@@ -33,3 +33,4 @@ proxychains : A hook preloader that allows to redirect TCP traffic of existing d
 tor-router  : A tool that allow you to make TOR your default gateway and send all internet connections under TOR (as transparent proxy) for increase privacy/anonymity without extra unnecessary code.
 nipe        : A script to make Tor Network your default gateway.
 torsocks    : Wrapper to safely torify applications
+```
