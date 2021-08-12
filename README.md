@@ -1,9 +1,7 @@
 ## NEST
-
 You can quickly build a disposable OSINT environment using Blackarch Docker image as a base. This allows for basic CUI-based OSINT on any machine, as long as you have a usable Docker engine or Podman. In consideration of privacy, the official BlackArch mirror server in Sweden is set in the repository, so you can add any security tool.
 
 ### INSTALL
-
 fast install
 ```shell
 $ docker run -it --rm ghcr.io/secretshangri-la/nest:1.0
@@ -34,3 +32,5 @@ tor-router  : A tool that allow you to make TOR your default gateway and send al
 nipe        : A script to make Tor Network your default gateway.
 torsocks    : Wrapper to safely torify applications
 ```
+### Using Tor
+Tor uses the obfs4 bridge, which is hard-coded into torrc by default. Be sure to start Tor by typing `tor &` if you want to use Tor in the whole NEST container, you can enable the Tor communication environment in the whole container by typing `. torsocks on` after the above command.
